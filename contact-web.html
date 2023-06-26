@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8" />
+
+	<title>Contact</title>
+	<style>
+		/*You should already have these called in your CSS, but double check that you have 
+		the same properties as those listed below. Otherwise I can't guarantee that
+		it will all work.*/
+		
+		#wrapper {
+			width: 1020px; /*set the width of the wrapper*/
+			margin: 0 auto; /*center the wrapper*/
+			background-color: #5D4D4C; /*set the background color for the wrapper portion*/
+		}
+		
+		body {
+			margin: 0;
+			padding: 0;
+			background-color: #5E5E5E;
+		}		
+		
+		header {
+			width: 1020px;
+			background-color: #000000;
+		}
+		
+		/*From here down is all of the new information that you likely don't have*/
+		nav {
+			width: 384px; /*128px per box times 4 boxes with the current nav bar. This will change with each box added to the list*/
+			margin: 0 auto; /*center the navigation buttons*/
+			
+		}
+		
+		nav ul {
+    		list-style-type: none; /*Take away the bullet points*/
+    		padding: 0;
+  			margin: 0;
+    		overflow: hidden; /*specifies that if your content is too big for the box it will just be hidden instead of scrolling or overlapping */
+		}
+
+		nav li {
+    		float: left; /*force the list items to float beside one another rather than be a vertical list*/
+    		font-family: 'Oswald', sans-serif; /*you can declare any set of fonts here*/
+  			font-size: 1.4em; /*makes the font bigger than the rest of the normal links*/
+  			line-height: 50px;
+  			height: 50px; /*specifies how tall your navigation buttons are going to be*/
+		}
+
+		nav a:link, nav a:visited {
+    		display: block; /*display a block around each <a> tag*/
+    		width: 120px; /*the block will be however wide you specify here*/
+    		color: #FFFFFF; /*make the text in the <a> tags whatever color you specify here*/
+    		background-color: #000000; /*make the box whatever color you specify here*/
+    		text-align: center; /*align the <a> tags to the center of the box*/
+    		text-decoration: none; /*this takes away the underline of the <a> tag*/
+    		transition: .3s background-color; /*this animates the color for when you scroll over the box*/
+		}
+
+		nav a:hover, nav a:active {
+    		background-color: #7D151A; /*when you scroll over or click on the <a> tag, the box will turn this color*/
+		}
+		/*End of the new CSS content that is related to the nav bar*/
+		h1 {
+			color: #ffffff;
+			}
+			
+					h2 {
+			color: #ffffff;
+			}
+	</style>
+</head>
+
+<body>
+	<div id = "wrapper">
+		<header>
+		<nav>
+			
+			<ul>
+ 				<li><a href="home.html">Home</a></li>
+  				<li><a href="about-us.html">About Us</a></li>
+  				<li><a href="contact.html">Contact</a></li>
+			</ul>
+			
+		</nav>
+		<h1><center>ALEX FILMS</center></h1>
+		</header>
+		<section>
+		<h1><center>Contact</center></h1>
+		<h2> <center>E-mail: AlexFilmsinc@gmail.com </center></h2>
+		<h1><center>Rates</center></h1>
+		<h2><center> Videos: $250
+			Photos: $150 </center>
+		</h2>
+		</section>
+	</div>
+</body>
+</html>

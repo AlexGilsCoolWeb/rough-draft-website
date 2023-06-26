@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8" />
+
+	<title>Home</title>
+	<style>
+		/*You should already have these called in your CSS, but double check that you have 
+		the same properties as those listed below. Otherwise I can't guarantee that
+		it will all work.*/
+		
+		#wrapper {
+			width: 1020px; /*set the width of the wrapper*/
+			margin: 0 auto; /*center the wrapper*/
+			background-color: #5D4D4C; /*set the background color for the wrapper portion*/
+		}
+		
+		body {
+			margin: 0;
+			padding: 0;
+			background-color: #5E5E5E;
+		}		
+		
+		header {
+			width: 1020px;
+			background-color: #000000;
+		}
+		
+		/*From here down is all of the new information that you likely don't have*/
+		nav {
+			width: 384px; /*128px per box times 4 boxes with the current nav bar. This will change with each box added to the list*/
+			margin: 0 auto; /*center the navigation buttons*/
+			
+		}
+		
+		nav ul {
+    		list-style-type: none; /*Take away the bullet points*/
+    		padding: 0;
+  			margin: 0;
+    		overflow: hidden; /*specifies that if your content is too big for the box it will just be hidden instead of scrolling or overlapping */
+		}
+
+		nav li {
+    		float: left; /*force the list items to float beside one another rather than be a vertical list*/
+    		font-family: 'Oswald', sans-serif; /*you can declare any set of fonts here*/
+  			font-size: 1.4em; /*makes the font bigger than the rest of the normal links*/
+  			line-height: 50px;
+  			height: 50px; /*specifies how tall your navigation buttons are going to be*/
+		}
+
+		nav a:link, nav a:visited {
+    		display: block; /*display a block around each <a> tag*/
+    		width: 120px; /*the block will be however wide you specify here*/
+    		color: #FFFFFF; /*make the text in the <a> tags whatever color you specify here*/
+    		background-color: #000000; /*make the box whatever color you specify here*/
+    		text-align: center; /*align the <a> tags to the center of the box*/
+    		text-decoration: none; /*this takes away the underline of the <a> tag*/
+    		transition: .3s background-color; /*this animates the color for when you scroll over the box*/
+		}
+
+		nav a:hover, nav a:active {
+    		background-color: #7D151A; /*when you scroll over or click on the <a> tag, the box will turn this color*/
+		}
+		/*End of the new CSS content that is related to the nav bar*/
+		
+		h1 {
+			color: #ffffff;
+			}
+		section {
+		text-align: center;
+		width: 600px;
+		 height: 700px;
+		 float: left;
+		 left: 17%;
+		 position: absolute;
+		 
+		}
+		
+		aside { width: 300px;
+				height: 350px;
+				float: right;
+				left: 59%;
+				position: absolute;
+			}
+			article { width: 300px;
+				height: 350px;
+				float: right;
+					left: 59%;
+					top: 61%;
+				position: absolute;
+			}
+			
+			#container {
+						width: fit-content;
+						height: fit-content;
+						}
+						.centered {
+  position: absolute;
+  top: 75%;
+  left: 37%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  text-decoration: underline;
+  font-size: 50px;
+  font-family: impact, fantasy;
+  }
+  .centered:hover, .centered:active {
+    		color: red; 
+    		-webkit-text-stroke: 2px #ffffff;
+    		}
+    		.centered1 {
+  position: absolute;
+  top: 35%;
+  left: 69%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  text-decoration: underline;
+  font-size: 35px;
+  font-family: impact, fantasy;
+  }
+  .centered1:hover, .centered1:active {
+    		color: red; 
+    		-webkit-text-stroke: 2px #ffffff;
+    		}
+    		.centered2 {
+  position: absolute;
+  top: 77%;
+  left: 69%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  text-decoration: underline;
+  font-size: 35px;
+  font-family: impact, fantasy;
+  }
+  .centered2:hover, .centered2:active {
+    		color: red; 
+    		-webkit-text-stroke: 2px #ffffff;
+    		}
+						
+	</style>
+</head>
+
+<body>
+	<div id = "wrapper">
+		<header>
+		
+		<nav>
+			
+			<ul>
+ 				<li><a href="home.html">Home</a></li>
+  				<li><a href="about-us.html">About Us</a></li>
+  				<li><a href="contact.html">Contact</a></li>
+			</ul>
+			
+		</nav>
+		<h1><center>ALEX FILMS</center></h1>
+		</header>
+		
+		
+	</div>
+	<div id="container">
+<section><p><a href="music.html"><img src="music2.jpg" alt="Bankroll hayden" width="600" height="700"></a></p></section>
+<div class="centered">MUSIC</div>
+<aside><p><a href="portraits.html"><img src="Portrait1.jpg" alt="Grad Portrait" width="300" height="350"></a></p></aside>
+<article> <p><a href="https://gondola.cc/alexincfilms"><img src="Sports2.jpg" alt="Sports photo" width="300" height="350"></a></p></article>
+ <div class="centered1">PORTRAITS</div>
+<div class="centered2">SPORTS</div>
+</div>
+</body>
+</html>

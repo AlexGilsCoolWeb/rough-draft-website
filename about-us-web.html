@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8" />
+
+	<title>About Us</title>
+	<style>
+		/*You should already have these called in your CSS, but double check that you have 
+		the same properties as those listed below. Otherwise I can't guarantee that
+		it will all work.*/
+		
+		#wrapper {
+			width: 1020px; /*set the width of the wrapper*/
+			margin: 0 auto; /*center the wrapper*/
+			background-color: #5D4D4C; /*set the background color for the wrapper portion*/
+		}
+		
+		body {
+			margin: 0;
+			padding: 0;
+			background-color: #5E5E5E;
+		}		
+		
+		header {
+			width: 1020px;
+			background-color: #000000;
+		}
+		
+		/*From here down is all of the new information that you likely don't have*/
+		nav {
+			width: 384px; /*128px per box times 4 boxes with the current nav bar. This will change with each box added to the list*/
+			margin: 0 auto; /*center the navigation buttons*/
+			
+		}
+		
+		nav ul {
+    		list-style-type: none; /*Take away the bullet points*/
+    		padding: 0;
+  			margin: 0;
+    		overflow: hidden; /*specifies that if your content is too big for the box it will just be hidden instead of scrolling or overlapping */
+		}
+
+		nav li {
+    		float: left; /*force the list items to float beside one another rather than be a vertical list*/
+    		font-family: 'Oswald', sans-serif; /*you can declare any set of fonts here*/
+  			font-size: 1.4em; /*makes the font bigger than the rest of the normal links*/
+  			line-height: 50px;
+  			height: 50px; /*specifies how tall your navigation buttons are going to be*/
+		}
+
+		nav a:link, nav a:visited {
+    		display: block; /*display a block around each <a> tag*/
+    		width: 120px; /*the block will be however wide you specify here*/
+    		color: #FFFFFF; /*make the text in the <a> tags whatever color you specify here*/
+    		background-color: #000000; /*make the box whatever color you specify here*/
+    		text-align: center; /*align the <a> tags to the center of the box*/
+    		text-decoration: none; /*this takes away the underline of the <a> tag*/
+    		transition: .3s background-color; /*this animates the color for when you scroll over the box*/
+		}
+
+		nav a:hover, nav a:active {
+    		background-color: #7D151A; /*when you scroll over or click on the <a> tag, the box will turn this color*/
+		}
+		/*End of the new CSS content that is related to the nav bar*/
+		h1 {
+			color: #ffffff;
+			}
+		p {
+			color: #ffffff;
+			}	
+		section { 
+				float: left;
+				border-style:solid;
+				border-width: 5px;
+				border-color: #7D151A;
+				position: absolute;
+ 				 top: 40%;
+ 			 left: 30%;
+		  transform: translate(-50%, -50%);
+				}
+				
+		aside {
+				float:right;
+		position: absolute;
+  top: 40%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+				 }
+	</style>
+</head>
+
+<body>
+	<div id = "wrapper">
+		<header>
+		<nav>
+			<ul>
+ 				<li><a href="home.html">Home</a></li>
+  				<li><a href="about-us.html">About Us</a></li>
+  				<li><a href="contact.html">Contact</a></li>
+			</ul>
+			
+		</nav>
+		<h1><center>ALEX FILMS</center></h1>
+		</header>
+	</div>
+	
+	<section> 
+	<img src="Alex_Pic1.jpg" alt="Alex Films" width="230" height="230">
+</section>
+
+<aside> 
+<h1>WHAT'S UP!</h1>
+<p>My name is Alex Gil and I am a creative director. Alex
+ Films is my media company in which we produce video
+  and photo content for music, sports, portraits, and many
+   more. I will graduate from Texas Tech University in
+    August of 2023 with a BA in Creative Media Industries.</p>
+
+</aside>
+</body>
+</html>
